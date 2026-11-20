@@ -1,0 +1,38 @@
+# --- Always ---
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.env
+logs/
+.pytest_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+
+# --- Keep only the sections below that apply to this project; delete the rest ---
+
+# Only if the project stores uploaded files
+uploads/
+
+# Only if the project uses SQLite (Django fallback, local tests)
+db.sqlite3
+
+# Only for Flask (instance folder)
+instance/
+
+# Only for RAG projects with a local ChromaDB
+chroma_data/
+
+# Only if the project has third-party OAuth or signing keys (MCP/Google)
+credentials.json
+token.json
+*_private.pem
+
+# Only once an eval/ folder exists (scripts and golden datasets are committed)
+eval/reports/*
+!eval/reports/.gitkeep
+
+# Only if the project creates or edits Office files
+~$*

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "policy_01",
+    "question": "How many days of annual leave does a full-time employee get?",
+    "expected_document": "rag_evaluation_handbook.pdf",
+    "expected_pages": [3],
+    "expected_answer": "24 days",
+    "category": "fact"
+  },
+  {
+    "id": "refusal_01",
+    "question": "What is the company's stock price today?",
+    "expected_document": "",
+    "expected_pages": [],
+    "expected_answer": "Not in the documents (the assistant must say so)",
+    "category": "refusal"
+  }
+]
